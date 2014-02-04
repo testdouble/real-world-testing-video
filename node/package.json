@@ -1,0 +1,17 @@
+{
+  "name": "node-tdd-example",
+  "version": "0.0.1",
+  "description": "An example project for unit and integration testing under node with jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt spec:unit spec:e2e"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt-jasmine-bundle": "~0.1.4",
+    "grunt": "~0.4.2",
+    "coffee-script": "~1.7.1",
+    "sandboxed-module": "~0.3.0"
+  }
+}
