@@ -19,3 +19,5 @@ module.exports = (grunt) ->
           minijasminenode:
             showColors: true
             defaultTimeoutInterval: 10000
+
+  grunt.registerTask("default", ["spec:unit", "spec:e2e"])
