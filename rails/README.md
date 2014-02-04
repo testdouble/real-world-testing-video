@@ -9,7 +9,7 @@ $ bundle install
 Then verify the specs run from the command line:
 
 ```
-$ bundle exec spec:javascripts
+$ bundle exec rake spec:javascripts
 ```
 
 Next, try starting your app and visiting the interactive test runner:
