@@ -63,6 +63,10 @@ jQuery application code
 Goal: spot check our progress so far; answer any questions before we move on to
 the afternoon's activities
 
+<hr/>
+**Consume a lunch**
+<hr/>
+
 ### Discuss outside-in TDD, introduce Node.js, demo
 
 Goal: discuss how to use TDD to break a large problem down. Use a Node.js example
