@@ -9,5 +9,6 @@ $ ->
       description: @['description'].value,
       done: @['done'].checked
     .done (data) ->
-      html = "<tr><td>#{data['id']}</td><td>#{data['description']}</td><td>#{data['done']}</td></tr>"
+      html = "<tr><td>#{data['description']}</td><td>#{data['done']}</td></tr>"
       $('#todos tbody').append(html)
+      $('#new-todo-form')[0].reset()
