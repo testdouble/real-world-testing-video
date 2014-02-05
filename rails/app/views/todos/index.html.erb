@@ -1,0 +1,30 @@
+<h1>Listing todos</h1>
+
+<table id="todos">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Description</th>
+      <th>Done</th>
+    </tr>
+  </thead>
+
+  <tbody></tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo', new_todo_path, id: "new-todo-link" %>
+
+<br>
+<br>
+
+<form id="new-todo-form" hidden="true">
+  <label for="description">Description</label>
+  <input type="text" name="description"/>
+
+  <label for="done">Done</label>
+  <input type="checkbox" name="done"/>
+
+  <input type="submit"/>
+</form>
