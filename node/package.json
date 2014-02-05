@@ -6,12 +6,20 @@
   "scripts": {
     "test": "grunt spec:unit spec:e2e"
   },
+  "main": "main.js",
   "author": "",
+  "scripts": {
+    "start": "node main.js"
+  },
   "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~3.3",
+    "coffee-script": "~1.6.3"
+  },
   "devDependencies": {
     "grunt-jasmine-bundle": "~0.1.4",
     "grunt": "~0.4.2",
-    "coffee-script": "~1.7.1",
-    "sandboxed-module": "~0.3.0"
+    "sandboxed-module": "~0.3.0",
+    "request": "~2.27.0"
   }
 }
