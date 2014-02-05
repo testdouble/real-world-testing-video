@@ -20,6 +20,7 @@
     "grunt-jasmine-bundle": "~0.1.4",
     "grunt": "~0.4.2",
     "sandboxed-module": "~0.3.0",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "lodash": "~0.9"
   }
 }
