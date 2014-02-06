@@ -13,7 +13,8 @@ Time | Topic
 9:30-10:00 | Student Exercise: Standalone test runner
 10:00-10:30 | Discuss real-world JS Testing Strategies
 10:30-10:45 | Break
-10:45-12:00 | Student Exercise: jasmine-rails legacy jQuery characterization
+10:45-11:45 | Student Exercise: jasmine-rails legacy jQuery characterization
+11:45-12:00 | Morning Debrief / Q & A
 12:00-1:30 | Lunch
 1:30-2:00 | Discuss outside-in TDD, introduce Node.js, demo
 2:00-3:00 | Student Exercise: Math Quiz Web Service
