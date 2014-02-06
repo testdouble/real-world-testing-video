@@ -12,14 +12,15 @@ Time | Topic
 9:00-9:30 | Intro
 9:30-10:00 | Student Exercise: Standalone test runner
 10:00-10:30 | Discuss real-world JS Testing Strategies
-10:30-11:30 | Student Exercise: jasmine-rails legacy jQuery characterization
-11:30-12:00 | Morning Debrief / Q & A
-12:00-1:00 | Lunch
-1:00-1:30 | Discuss outside-in TDD, introduce Node.js, demo
-1:30-2:30 | Student Exercise: Math Quiz Web Service
-2:30-3:00 | Discuss Lineman, Testem, and the tension between TDD and frameworks
-3:00-4:00 | Student Exercise: Math Quiz Web User Interface
-4:00-5:00 | Ad hoc coverage of other topics upon attendee request
+10:30-10:45 | Break
+10:45-12:00 | Student Exercise: jasmine-rails legacy jQuery characterization
+12:00-1:30 | Lunch
+1:30-2:00 | Discuss outside-in TDD, introduce Node.js, demo
+2:00-3:00 | Student Exercise: Math Quiz Web Service
+3:00-3:15 | Break
+3:15-3:45 | Discuss Lineman, Testem, and the tension between TDD and frameworks
+3:45-4:45 | Student Exercise: Math Quiz Web User Interface
+4:45-~ | Ad hoc coverage of other topics upon attendee request
 
 ### Intro
 
