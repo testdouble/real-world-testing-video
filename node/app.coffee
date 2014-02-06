@@ -8,7 +8,7 @@ app.get "/", (req, res, err) ->
   res.send 200
 
 app.get "/problem", (req, res, err) ->
-  res.send(501)
+  res.json(require('./lib/gets-problem').get())
 
 app.get "/problem/:id", (req, res, err) ->
   res.send(501)
