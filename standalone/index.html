@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.3.1/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.3.1/jasmine.css">
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine-html.js"></script>
+
+  <script type="text/javascript" src="spec/helpers/helper.js"></script>
+  <script type="text/javascript" src="spec/helpers/jasmine-given.js"></script>
+  <script type="text/javascript" src="spec/helpers/jasmine-only.js"></script>
+  <script type="text/javascript" src="spec/helpers/jasmine-stealth.js"></script>
+
+
+  <!-- include vendor files here... -->
+  <script type="text/javascript" src="vendor/coffee-script.js"></script>
+
+  <!-- include source files here... -->
+  <script type="text/coffeescript" src="src/roman-numeral-converter.coffee"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/coffeescript" src="spec/roman-numeral-converter-spec.coffee"></script>
+
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var htmlReporter = new jasmine.HtmlReporter();
+
+      jasmineEnv.addReporter(htmlReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return htmlReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        setTimeout(function(){
+          execJasmine();
+        }, 1)
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

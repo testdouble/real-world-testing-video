@@ -1,0 +1,14 @@
+{
+  "name": "standalone-tdd-example",
+  "version": "0.0.1",
+  "description": "An example project trying out the standalone Jasmine test runner",
+  "main": "main.js",
+  "author": "",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~3.3"
+  }
+}
