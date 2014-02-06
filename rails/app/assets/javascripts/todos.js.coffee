@@ -1,9 +1,9 @@
 $ ->
-  $('#new-todo').on 'click', (e) ->
+  $('body').on 'click', '#new-todo', (e) ->
     e.preventDefault()
     $('#new-todo-form').show()
 
-  $('#new-todo-form').on 'submit', (e) ->
+  $('body').on 'submit', '#new-todo-form', (e) ->
     e.preventDefault()
 
     $.post '/todos',
