@@ -1,4 +1,4 @@
 describe 'adding numbers', ->
-  Given -> @number = 1
-  When -> @result = @number + 1
-  Then -> @result == @number + 1
+  Given -> @subject = requireSubject('lib/add')
+  When -> @result = @subject.add(5, 7)
+  Then -> @result == 12
