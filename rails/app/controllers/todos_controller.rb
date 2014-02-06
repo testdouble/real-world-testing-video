@@ -4,6 +4,6 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = {description: params['description'], done: params['done']}
+    @todo = {description: params['description'], done: true.to_s == params['done']}
   end
 end
