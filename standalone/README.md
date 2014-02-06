@@ -7,7 +7,7 @@ Because opening a URL in a browser from a `file://` protocol raises security
 errors in most modern browsers, these files can be statically hosted using an
 included Express.js application.
 
-To run your tests:
+To run your tests, first install [Node.js](http://nodejs.org), then:
 
 ```
 $ npm install
