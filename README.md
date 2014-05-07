@@ -9,19 +9,16 @@ Summary notes:
 
 Time | Topic
 --- | ---
-9:00-9:30 | Intro
-9:30-10:00 | Student Exercise: Standalone test runner
-10:00-10:30 | Discuss real-world JS Testing Strategies
+9:00-9:30 | Intro: background, goals, first steps
+9:30-10:15 | Exercise: Simple tests, simple test runner
+10:15-10:30 | Discussion: types of tests
 10:30-10:45 | Break
-10:45-11:45 | Student Exercise: jasmine-rails legacy jQuery characterization
-11:45-12:00 | Morning Debrief / Q & A
-12:00-1:30 | Lunch
-1:30-2:00 | Discuss outside-in TDD, introduce Node.js, demo
-2:00-3:00 | Student Exercise: Math Quiz Web Service
-3:00-3:15 | Break
-3:15-3:45 | Discuss Lineman, Testem, and the tension between TDD and frameworks
-3:45-4:45 | Student Exercise: Math Quiz Web User Interface
-4:45-~ | Ad hoc coverage of other topics upon attendee request
+10:45-12:00 | Exercise: Node.js web service, Grunt-based integration & unit test runner
+12:00-1:15 | Lunch
+1:15-1:30 | Debrief Node.js activity, gauge topical interest
+1:30-2:45 | Exercise: Lineman.js web app, Testem test runner
+2:45-3:00 | Break
+3:00-5:00 | Open-ended activities based on attendee interest
 
 ### Intro
 
