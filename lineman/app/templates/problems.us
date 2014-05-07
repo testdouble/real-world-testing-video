@@ -1,0 +1,10 @@
+<div class="problems">
+  <button class="new-problem">Get new problem</button>
+  <div class="latest-problem">
+  </div>
+  <div class="solve">
+    <input type="text" name="solution"></input>
+    <button class="solve-problem">Submit</button>
+    <div class="latest-result"></div>
+  </div>
+</div>
