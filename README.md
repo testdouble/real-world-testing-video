@@ -1,24 +1,16 @@
 # Real-world JavaScript Testing
 
-Summary notes:
- * Testing is too big a topic to learn all in one day. Especially when you add test-driven development
- * Workshops are particularly useful opportunities to get hands-on with tools
- * Today the emphasis is going to be on learning libraries and tools (because the setting allows for rapid support as problems arise), with a secondary emphasis on test design and practice
-
 ## Schedule Overview
 
 Time | Topic
 --- | ---
-9:00-9:30 | Intro: background, goals, first steps
-9:30-10:15 | Exercise: Simple tests, simple test runner
-10:15-10:30 | Discussion: types of tests
-10:30-10:45 | Break
-10:45-12:00 | Exercise: Node.js web service, Grunt-based integration & unit test runner
-12:00-1:15 | Lunch
-1:15-1:30 | Debrief Node.js activity, gauge topical interest
-1:30-2:45 | Exercise: Lineman.js web app, Testem test runner
-2:45-3:00 | Break
-3:00-5:00 | Open-ended activities based on attendee interest
+1:00-1:30 | Intro: background, goals, first steps
+1:30-2:15 | Exercise: Simple tests, simple test runner
+2:15-2:30 | Discussion: types of tests
+2:30-2:45 | Break
+2:45-3:30 | Exercise: Node.js web service, Grunt-based integration & unit test runner
+3:30-3:45 | Discussion: Intro to lineman, testem, browser testing
+3:45-5:00 | Exercise: Lineman.js web app, Testem test runner
 
 ### Intro
 
@@ -38,6 +30,7 @@ Jasmine really is (as a script you drop into a plain HTML page)
 * Pair off and do the Roman Numeral Kata in a 30 minute time box
 * Do a short retrospective afterward
 
+<!--
 ### Discuss "real-world" JS Testing Strategies for the browser
 
 Goal: broaden the scope of inquiry beyond simple TDD puzzles and discuss the distinct
@@ -65,6 +58,7 @@ the afternoon's activities
 <hr/>
 **Consume a lunch**
 <hr/>
+-->
 
 ### Discuss outside-in TDD, introduce Node.js, demo
 
@@ -131,9 +125,11 @@ negative opinion about application frameworks, but rather that they pose a numbe
 of additional time-consuming challenges when practicing TDD, which we'll discuss
  as a group.]
 
+<!--
 ### Ad hoc coverage of other topics upon attendee request
 
 This time block will probably be partially eaten up as a buffer from extra taken
 for any of the previous activities. Generally, provide an opportunity for a Q&A
 from students and a chance to respond to and demonstrate other concerns that may
 not have come up that students want to see (CI, integration testing, etc.)
+-->
