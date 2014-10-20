@@ -1,7 +1,7 @@
-window.ConvertsNumerals = class ConvertsNumerals
-
-  fromArabic: (arabic) ->
-    "I"
-
-  fromRoman: (roman) ->
-    1
+# window.ConvertsNumerals = class ConvertsNumerals
+#
+#   fromArabic: (arabic) ->
+#     "I"
+#
+#   fromRoman: (roman) ->
+#     1
