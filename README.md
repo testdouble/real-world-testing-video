@@ -8,9 +8,9 @@ Time | Topic
 1:30-2:15 | Exercise: Simple tests, simple test runner
 2:15-2:30 | Discussion: types of tests
 2:30-2:45 | Break
-2:45-3:30 | Exercise: Node.js web service, Grunt-based integration & unit test runner
-3:30-3:45 | Discussion: Intro to lineman, testem, browser testing
-3:45-5:00 | Exercise: Lineman.js web app, Testem test runner
+2:45-3:45 | Exercise: Node.js web service, Grunt-based integration & unit test runner
+3:45-4:00 | Discussion: Intro to lineman, testem, browser testing
+4:00-5:00 | Exercise: Lineman.js web app, Testem test runner
 
 ### Intro
 
@@ -106,8 +106,7 @@ how to prevent code from becoming an unreasonable mess.
 
 ### Student Exercise: Math Quiz Web User Interface
 
-Goal: Combine the outside-in TDD strategy we learned for building a web service
-with the browser-specific tactics we learned when detangling jQuery
+Goal: Practice some of the more challenging tactics useful when testing DOM interactions, with less of an emphasis on TDD's design benefits.
 
 Rules of the game:
 
