@@ -1,5 +1,5 @@
-describe "GET /problem/random", ->
-  When (done) -> GET "/problem/random", done, (err, res) =>
+describe "GET /problem", ->
+  When (done) -> GET "/problem", done, (err, res) =>
     @result = res
     @json = res.json
   Then -> @result.statusCode == 200
@@ -10,7 +10,7 @@ describe "GET /problem/random", ->
   And -> @json.description == "#{@json.operands.left} #{@json.operator} #{@json.operands.right}"
 
 describe "GET /problem/:id", ->
-  Given (done) -> GET "/problem/random", done, (err, res) => @problem = res.json
+  Given (done) -> GET "/problem", done, (err, res) => @problem = res.json
   When (done) -> GET "/problem/#{@problem.id}", done, (err, res) => @result = res
   Then -> expect(@result.json).toEqual(@problem)
 
