@@ -8,6 +8,17 @@ describe "rendering the UI", ->
 
   describe "fetching a new problem", ->
     Given -> @$button = @$container.affix('button.new-problem')
-    Given -> spyOn($, 'get')
+    Given -> spyOn($, 'get') #<-- spies record everything, so it has it.
+    Given -> @captor = jasmine.captor()
     When  -> @$button.trigger('click')
-    Then  -> expect($.get).toHaveBeenCalledWith('/problem', jasmine.any(Function))
+    And   -> expect($.get).toHaveBeenCalledWith('/problem', @captor.capture())
+    # ^ not that this "Then" is now an "And" so the @captor.capture() can affect downstream tests
+
+    describe "rendering the new problem", ->
+      Given -> @$latestProblem = @$container.affix('.latest-problem')
+      Given -> @problem = description: '1 + 1'
+      # ^ recall that all problems will have a description
+      # I try to keep my test data to a bare minimum to make clear the contract in the code
+      # (e.g. this code doesn't rely on ID, operands, etc. yet)
+      When  -> @captor.value(@problem)
+      Then  -> @$latestProblem.text() == "1 + 1"
