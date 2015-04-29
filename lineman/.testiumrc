@@ -1,0 +1,11 @@
+{
+  "launch": true,
+  "browser": "chrome",
+  "app": {
+    "port": 8000
+  },
+  "mocha": {
+    "timeout": 10000,
+    "slow": 2500
+  }
+}
