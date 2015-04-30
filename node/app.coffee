@@ -17,7 +17,12 @@ app.get "/problem/:id", (req, res, err) ->
   res.json(savesProblem.retrieve(req.params.id))
 
 app.post "/solution", (req, res, err) ->
-  res.send(501)
+  solution        = req.body
+  originalProblem = savesProblem.retrieve(solution.problemId)
+  if eval(originalProblem.description) == eval(solution.answer)
+    res.send(202)
+  else
+    res.send(422)
 
 module.exports =
   start: (quiet) ->

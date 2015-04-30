@@ -1,5 +1,4 @@
 require "./spec-helper"
-_ = require "lodash"
 
 describe "presents a problem", ->
   Given -> @browser.navigateTo '/'
