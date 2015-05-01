@@ -1,0 +1,2 @@
+client: lineman run
+server: node ../node/main.js
