@@ -2,7 +2,7 @@ express = require("express")
 
 getsProblem = require('./lib/gets-problem')
 savesProblem = require('./lib/saves-problem')
-evaluatesSolution = require('./lib/evaluates-solution')
+checksAnswer = require('./lib/checks-answer');
 
 app = express()
 
@@ -18,8 +18,8 @@ app.get "/problem/:id", (req, res, err) ->
   res.json(savesProblem.retrieve(req.params.id))
 
 app.post "/solution", (req, res, err) ->
-  correct = evaluatesSolution(req.body.answer, savesProblem.retrieve(req.body.problemId).description)
-  if correct then res.send(202) else res.send(422)
+  correct = checksAnswer(req.body.problemId, req.body.answer)
+  res.send(if correct then 202 else 422);
 
 module.exports =
   start: (quiet) ->
