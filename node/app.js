@@ -1,6 +1,7 @@
 var express      = require("express");
 var getsProblem  = require('./lib/gets-problem');
-var savesProblem = require('./lib/saves-problem');
+var savesProblem  = require('./lib/saves-problem');
+var checksAnswer = require('./lib/checks-answer');
 var app          = express();
 
 app.use(express.bodyParser());
@@ -18,14 +19,7 @@ app.get("/problem/:id", function(req, res, err) {
 });
 
 app.post("/solution", function(req, res, err) {
-  var originalProblem, solution;
-  solution = req.body;
-  originalProblem = savesProblem.retrieve(solution.problemId);
-  if (eval(originalProblem.description) === eval(solution.answer)) {
-    res.send(202);
-  } else {
-    res.send(422);
-  }
+  res.send(checksAnswer(req.body.problemId, req.body.answer) ? 202 : 422);
 });
 
 module.exports = {
