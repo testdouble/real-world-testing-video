@@ -8,10 +8,17 @@
     "company": "ACME, Inc."
   },
   "devDependencies": {
-    "lineman": ">= 0.29.3"
+    "coffee-script": "~1.6.3",
+    "foreman": "^1.3.0",
+    "lineman": "~0.24.3",
+    "mocha": "^2.2.4",
+    "mocha-given": "^0.1.3",
+    "testium": "^2.6.0"
   },
   "scripts": {
-    "start": "lineman run",
-    "test": "lineman spec-ci"
+    "start": "./node_modules/foreman/nf.js start",
+    "test": "lineman spec-ci",
+    "test-console": "./node_modules/.bin/testium --browser chrome",
+    "test-ui": "./node_modules/.bin/mocha --recursive -u mocha-given --compilers coffee:coffee-script spec-e2e/ && killall -9 node"
   }
 }
